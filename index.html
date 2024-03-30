@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AWS AMplify Test</title>
+    </head>
+    <body>
+        <button id="click-button">Click Me</button>
+        <span id="click-text">I have been clicked: 0 times</span>
+
+        <script>
+            let clickButton = document.getElementById("click-button");
+            let clickText = document.getElementById("click-text");
+            let count = 0;
+
+            clickButton.addEventListener("click", () => {
+                count++;
+                clickText.textContent = `I have been clicked: ${count} times`
+
+            });
+        </script>
+    </body>
+</html>
